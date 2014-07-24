@@ -1,10 +1,10 @@
 Spring Boot
 ===========
 
-Check the Gradle setup
+To create a todo item:
 
-        alias g='./gradlew'
-        ./gradlew clean
+        curl http://localhost:8080/todos --data "..."
 
-Create the `src/main/java` folder and a package in it.
+To get the list of todo items:
 
+        curl http://localhost:8080/todos
