@@ -9,15 +9,12 @@ buildscript {
 
 apply plugin: 'spring-boot'
 
-allprojects {
-    
-	repositories {
-        mavenCentral()
-    }
-	
-    group = 'net.nemerosa.ontrack'
-    version = '1.0.0'
+repositories {
+    mavenCentral()
 }
+
+group = 'net.nemerosa.dojo.springboot'
+version = '1.0.0'
 
 ext {
     sourceCompatibility = 1.8
@@ -31,12 +28,4 @@ ext {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter")
     testCompile("org.springframework.boot:spring-boot-starter-test")
-}
-
-/**
- * Wrapper definition
- */
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.12'
 }
