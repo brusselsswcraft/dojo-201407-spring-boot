@@ -26,7 +26,6 @@ ext {
  */
 
 dependencies {
-    compile 'org.projectlombok:lombok:1.14.4'
     compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
